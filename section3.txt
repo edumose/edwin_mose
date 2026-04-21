@@ -1,0 +1,29 @@
+Section 3: UI TESTING
+1) Write 5 functional test cases
+verify that user types in the correct email and password.
+Vefiy that user is successfully redirected to the home page after successful log in.
+Verify that the user is able to login after clicking the login button.
+Verify that the user will only enter the password and email once.
+Verify that the api responses after successful login return a 200 response code.
+
+
+Write 3 Negative test cases.
+Verify that unauthorized users cannot log into the system.
+Verify that any attempt to type incorrect details will result to an error message popping up on the log in page
+Verfy that the login button will not show if user has not filed in the required fileds
+
+
+Identiy at least three possible bugs
+1) User is not able to login after successful entering email and password.
+2) CORS Error is showing when user attempts to login.
+3) There is no validation taking place even when entering incorrect details
+
+
+
+BONUS
+Describe how you would automate this using Selenium or cypress
+
+One way i would automate this is if there is a email and password filed i will write a program that will validate I & M email then use locators to identify the fileds
+the locators that i may use here can either be the ID, Name, xpath or css selector depending on the locators i will get. 
+Also i will write an assertion to check the welcome message after successul login. so in short selenium will be the best tool since i will have to check the locators
+for both the email password and login then use POM(PAGE OBJECT MODEL) to distinguish the various pages. The goal here would be to automate repetitive tasks first.

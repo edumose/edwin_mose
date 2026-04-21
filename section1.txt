@@ -1,0 +1,20 @@
+Section 1: API TESTING
+Tasks
+Write at least 6 test cases for this API randomuser.me/api/
+
+Positive cases
+Verify that all users must have a different UUID assigned to them
+Verify that Every successful Get request should have a 200 or 201 expected status code
+
+Negative Cases
+verify that the get request does not fetche the same user every time you initiate a request.
+verify that a malformed endpoint will not still fetch correct details with a 200 expected status code.
+
+Edge cases
+Every time you initiate a get request check to see if it will return the more than one page
+verift that Initiating a get request will not result to zero results
+
+Define
+Validation Points: This refers to a endpoint that can either fetch details for the databases, create or update records.
+Expected Status code: This refers to the standard HTTP responses that normally show if either a request is successful or has failed I.e if a request returns 200 it means successful, if 404 means not found or 500 which means there could be an issue at the server side.
+

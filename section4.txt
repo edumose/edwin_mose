@@ -1,0 +1,40 @@
+SECTION 4: BUG REPORT
+Descrition: User unable to login
+
+we have identifed an issue whereby when a user types the correct email and password they are not able to login.
+
+Steps to reproduce
+1) Log into http://example.com
+2) Type in your email and password
+3) Press the login button.
+
+Screenshots and videos if exists
+
+Actual result
+When a user types in there email and password they are not able to proceed past the login page.
+
+Expected Result:
+When a user types in there correct email and password they should be able to proceed to the homepage of the site.
+if they proceed to type an incorrect email and password they should not be able to proceed and get a message telling them to type the correct password and email
+
+TASK
+SECTION 4: SIT Question
+1) How would you approach indentifying the root cause?
+
+How i would go in indentifying the root cause is by:
+
+I) I would first check and see if the reconciliation reports have been scheduled to refresh after a certain period of time. IF indeed there refreshed and details are not captured correclty go to the second option.
+
+II) Another way is by cheking which API is pulling this report by going to the actual page and right click,
+the mouse go to the network tab then refresh the page after this you check which particular api is responsibile for fetching this details.
+Then from there check to see if there is any error on that particular API endpoint then get the trace id and check the logviewer to see what might be the actual cause of the discripancy.
+after you gather the full details log a ticket then let the PM and Dev know about the issue. 
+
+III) Another way is if the reconciliation report is in a diffrent place check the query that is used to fetch the details and notify the Data department and tell them there could be an issue in the query they are using to fetch the reconciliation report
+
+2) What specific checks would you perform?
+
+I) I would also try and see if indeed there is an issue cause maybe the reconciliation report has been configured to refresh after a certain period of time.
+
+II) I would check and see what api is used in feching this paricular reports maybe the API might not be properly configured also check and see if you can get any trace id that i can use to investigate further and narrow down the root cause.
+IF it is a reconciliation report that has an issue. i would also try and know which particular department handles report then notify them to check or rectify there query.
