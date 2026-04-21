@@ -1,0 +1,4 @@
+function valdatingEmail(email) {
+const regex = /^[^\s@]+@.4g-captila.com\.com$/;
+return regex.test(email);
+}
