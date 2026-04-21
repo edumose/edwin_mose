@@ -2,8 +2,3 @@ function valdatingEmail(email) {
 const regex = /^[^\s@]+@imbank\.co.ke$/;
 return regex.test(email);
 }
-
-
-To contact I&M Bank, you can use the following email address: customercare. For further assistance, you can also reach them at +254 20 322 1000. 
-I&M Group PLC
-+1
